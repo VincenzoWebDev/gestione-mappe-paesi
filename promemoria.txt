@@ -1,0 +1,4 @@
+continua mappe
+esericizio luoghi preferiti, inseriscili nel pannello e mostrali nella mappa frontend
+
+continua design pannello mappe

@@ -15,6 +15,7 @@ Route::middleware('auth')->group(function () {
     Route::post('maps', [MapsController::class, 'store'])->name('maps.store');
     Route::get('maps/{map}', [MapsController::class, 'edit'])->name('maps.edit');
     Route::patch('maps/{map}', [MapsController::class, 'update'])->name('maps.update');
+    Route::delete('maps/{map}', [MapsController::class, 'destroy'])->name('maps.destroy');
 
     Route::post('maps/markers', [MarkersController::class, 'store'])->name('maps.markers.store');
     Route::patch('maps/markers/{marker}', [MarkersController::class, 'update'])->name('maps.markers.update');

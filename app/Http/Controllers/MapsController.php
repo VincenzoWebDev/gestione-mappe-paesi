@@ -80,4 +80,9 @@ class MapsController extends Controller
 
         // return redirect()->route('maps.index');
     }
+
+    public function destroy(Map $map)
+    {
+        $map->delete();
+    }
 }

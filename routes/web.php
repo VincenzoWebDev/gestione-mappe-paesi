@@ -9,6 +9,7 @@ Route::get('/', function () {
     return Inertia::render('welcome');
 })->name('home');
 
+
 Route::middleware('auth')->group(function () {
     Route::get('maps', [MapsController::class, 'index'])->name('maps.index');
     Route::get('maps/create', [MapsController::class, 'create'])->name('maps.create');
